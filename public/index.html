@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HUPPY HUB | Social Media Services</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+  <a href="/" class="logo">
+    <span class="logo-icon">H</span>
+    <span>
+      <strong>HUPPY HUB</strong>
+      <small>SOCIAL MEDIA SERVICES</small>
+    </span>
+  </a>
+
+  <a
+    class="whatsapp-top"
+    href="https://wa.me/254796681162?text=Hello%20HUPPY%20HUB%20Support"
+    target="_blank"
+  >
+    💬 WhatsApp Support
+  </a>
+</header>
+
+<main>
+
+  <section class="hero">
+
+    <div class="hero-content">
+      <div class="badge">⚡ FAST • SIMPLE • SECURE</div>
+
+      <h1>
+        Grow your social presence with
+        <span>HUPPY HUB</span>
+      </h1>
+
+      <p>
+        Choose your service, enter your target,
+        pay securely through PesaPal and track your order.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#order" class="primary-btn">Start an Order</a>
+
+        <a
+          href="https://wa.me/254796681162?text=Hello%20HUPPY%20HUB%20Support"
+          target="_blank"
+          class="secondary-btn"
+        >
+          Contact Support
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-card">
+      <div class="hero-icon">🚀</div>
+      <h3>Easy Ordering</h3>
+      <p>DenzGains services</p>
+
+      <div class="mini-stat">
+        <span>Payment</span>
+        <strong>PesaPal</strong>
+      </div>
+
+      <div class="mini-stat">
+        <span>Support</span>
+        <strong>WhatsApp</strong>
+      </div>
+    </div>
+
+  </section>
+
+
+  <section id="order" class="order-grid">
+
+    <!-- ORDER FORM -->
+    <div class="card">
+
+      <div class="step">01</div>
+
+      <h2>Choose a service</h2>
+      <p class="muted">
+        Select a service from our available DenzGains services.
+      </p>
+
+      <label>Service</label>
+
+      <select id="service">
+        <option value="">Loading services...</option>
+      </select>
+
+      <div id="serviceInfo" class="service-info">
+        Select a service to see its details.
+      </div>
+
+
+      <label>Target Link / Username</label>
+
+      <input
+        id="link"
+        type="text"
+        placeholder="https://instagram.com/example"
+      >
+
+
+      <div class="two-columns">
+
+        <div>
+          <label>Quantity</label>
+
+          <input
+            id="quantity"
+            type="number"
+            min="1"
+            placeholder="1000"
+          >
+        </div>
+
+        <div>
+          <label>Total</label>
+
+          <div class="price-box" id="total">
+            KES 0.00
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- CUSTOMER DETAILS -->
+    <div class="card">
+
+      <div class="step">02</div>
+
+      <h2>Customer details</h2>
+      <p class="muted">
+        Enter your details before proceeding to payment.
+      </p>
+
+      <div class="two-columns">
+
+        <div>
+          <label>First name</label>
+          <input id="firstName" placeholder="John">
+        </div>
+
+        <div>
+          <label>Last name</label>
+          <input id="lastName" placeholder="Doe">
+        </div>
+
+      </div>
+
+
+      <label>Email</label>
+
+      <input
+        id="email"
+        type="email"
+        placeholder="you@example.com"
+      >
+
+
+      <label>Phone</label>
+
+      <input
+        id="phone"
+        placeholder="2547XXXXXXXX"
+      >
+
+
+      <button id="payButton" class="pay-button">
+        Continue to PesaPal →
+      </button>
+
+      <div id="message" class="message"></div>
+
+      <p class="secure">
+        🔒 Secure payment powered by PesaPal
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- TRACK ORDER -->
+
+  <section class="card tracking-card">
+
+    <div class="step">03</div>
+
+    <h2>Track your order</h2>
+
+    <p class="muted">
+      Enter your HUPPY HUB order ID.
+    </p>
+
+    <div class="tracking-form">
+
+      <input
+        id="orderId"
+        placeholder="Example: CC-1750000000-ABC123"
+      >
+
+      <button id="trackButton">
+        Check Status
+      </button>
+
+    </div>
+
+    <pre id="trackingResult"></pre>
+
+  </section>
+
+</main>
+
+
+<!-- FLOATING WHATSAPP -->
+
+<a
+  class="whatsapp-floating"
+  href="https://wa.me/254796681162?text=Hello%20HUPPY%20HUB%20Support"
+  target="_blank"
+>
+  💬
+</a>
+
+
+<footer>
+  © <span id="year"></span> HUPPY HUB
+  <br>
+  WhatsApp: +254 796 681 162
+</footer>
+
+
+<script src="/app.js"></script>
+
+</body>
+</html>
